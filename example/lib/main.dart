@@ -4,7 +4,7 @@ import 'package:app_badge_plus/app_badge_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
-
+import 'package:flutter/foundation.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -94,6 +94,9 @@ class _MyAppState extends State<MyApp> {
       }
     } else if (Platform.isMacOS) {
       requestMacOSPermission();
+    }else if (defaultTargetPlatform == TargetPlatform.ohos) {
+      isNotificationAllowed = true;
+            setState(() {});
     }
   }
 
