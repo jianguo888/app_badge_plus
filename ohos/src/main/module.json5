@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "app_badge_plus",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

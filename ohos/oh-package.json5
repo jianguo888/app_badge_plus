@@ -1,0 +1,11 @@
+{
+  "name": "app_badge_plus",
+  "version": "1.0.0",
+  "description": "A Flutter plugin for adding badges to your app icon. Supports iOS, Android,OpenHarmony and macOS.",
+  "main": "index.ets",
+  "author": "nutpi",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/flutter_ohos": "file:./har/flutter.har"
+  }
+}

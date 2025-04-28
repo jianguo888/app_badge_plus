@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/jianguo/.ohos/config/default_ohos_VLT3LJ8w4LmN9RJ4o3hSfcgJvJfZezmgj1DeVd1Ods8=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B5A524846572C9120AC3F6A0AC372C41F8C8DC6F4224536E12BDD0B1BAD550C55864B4288339D58",
+          "profile": "/Users/jianguo/.ohos/config/default_ohos_VLT3LJ8w4LmN9RJ4o3hSfcgJvJfZezmgj1DeVd1Ods8=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/jianguo/.ohos/config/default_ohos_VLT3LJ8w4LmN9RJ4o3hSfcgJvJfZezmgj1DeVd1Ods8=.p12",
+          "storePassword": "0000001B90B474B92B426D5E27983615B18EE97709D3F6ABBDC7B0B291EE271485CF67D0127BE37FEE4F68"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
